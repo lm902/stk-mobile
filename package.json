@@ -1,0 +1,12 @@
+{
+  "name": "stk-mobile",
+  "version": "1.0.0",
+  "description": "Client library for user profile for SSD mobile project",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx rollup -c"
+  },
+  "author": "lm902",
+  "license": "Apache-2.0"
+}
