@@ -9,20 +9,22 @@ export default class StkMobile {
    * @param {boolean} debug Enable debug message output
    */
   public constructor (private email: string, private password?: string, debug = false) {
-    if (debug) {
+    if (debug && window && window.localStorage) {
       window.localStorage.debug = 'leancloud*'
     }
-    AV.init({
-      appId: 'W5s1EwL7qA12qOkA7IINQ23S-9Nh9j0Va',
-      appKey: 'crb6g0edNaDaHcffiz1F5Y43',
-      serverURLs: 'https://stk-mobile.lm902.cn'
-    })
+    try {
+      AV.init({
+        appId: 'W5s1EwL7qA12qOkA7IINQ23S-9Nh9j0Va',
+        appKey: 'crb6g0edNaDaHcffiz1F5Y43',
+        serverURLs: 'https://stk-mobile.lm902.cn'
+      })
+    } catch { }
   }
 
   /**
    * Current signed in user
    */
-  public get user (): AV.User {
+  public static get user (): AV.User {
     return AV.User.current()
   }
 
