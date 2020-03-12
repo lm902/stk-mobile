@@ -18,6 +18,9 @@ export default class StkMobile {
         appKey: 'crb6g0edNaDaHcffiz1F5Y43',
         serverURLs: 'https://stk-mobile.lm902.cn'
       })
+      ;(AV.Object as any).register(Watching)
+      ;(AV.Object as any).register(Transaction)
+      ;(AV.Object as any).register(Holding)
     } catch { }
   }
 
@@ -61,6 +64,27 @@ export default class StkMobile {
    * @returns {AV.Promise<unknown>}
    */
   public requestPasswordReset (): AV.Promise<unknown> {
-    return AV.User.requestPasswordReset(this.email);
+    return AV.User.requestPasswordReset(this.email)
   }
+
+  /**
+   * Request a verification email to be sent in case the user did not receive the first one
+   * 
+   * @returns {AV.Promise<unknown>}
+   */
+  public requestEmailVerify (): AV.Promise<unknown> {
+    return AV.User.requestEmailVerfiy(this.email)
+  }
+}
+
+export class Watching extends AV.Object {
+  
+}
+
+export class Transaction extends AV.Object {
+  
+}
+
+export class Holding extends AV.Object {
+  
 }
