@@ -4,7 +4,8 @@ export default {
   input: 'src/index.ts',
   output: {
     file: 'bundle.js',
-    format: 'umd'
+    format: 'umd',
+    name: 'StkMobile'
   },
   plugins: [typescript()],
   external: ['leancloud-storage']
