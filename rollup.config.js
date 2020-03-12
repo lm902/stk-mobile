@@ -7,5 +7,5 @@ export default {
     format: 'umd'
   },
   plugins: [typescript()],
-  external: []
+  external: ['leancloud-storage']
 }

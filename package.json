@@ -8,5 +8,11 @@
     "build": "npx rollup -c"
   },
   "author": "lm902",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "leancloud-storage": "^4.3.0"
+  },
+  "devDependencies": {
+    "codelyzer": "^5.2.1"
+  }
 }
