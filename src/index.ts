@@ -78,13 +78,20 @@ export default class StkMobile {
 }
 
 export class Watching extends AV.Object {
-  
+  public symbol: string
+  public name: string
 }
 
 export class Transaction extends AV.Object {
-  
+  public symbol: string
+  public price_cents: number
+  public quantity: number
+  public name: string
 }
 
 export class Holding extends AV.Object {
-  
+  public symbol: string
+  public price_cents: number
+  public current_holding: number
+  public name: string
 }
