@@ -11,12 +11,10 @@
   "author": "lm902",
   "license": "Apache-2.0",
   "dependencies": {
-    "leancloud-storage": "^4.3.0"
-  },
-  "devDependencies": {
+    "leancloud-storage": "^4.3.0",
     "@rollup/plugin-typescript": "^4.0.0",
-    "codelyzer": "^5.2.1",
     "rollup": "^2.2.0",
+    "codelyzer": "^5.2.1",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
   }
