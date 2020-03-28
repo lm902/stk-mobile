@@ -1,6 +1,6 @@
 {
   "name": "stk-mobile",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Client library for user profile for SSD mobile project",
   "main": "bundle.js",
   "scripts": {
