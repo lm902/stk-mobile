@@ -5,8 +5,7 @@
   "main": "bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx rollup -c",
-    "postinstall": "npm run build"
+    "build": "npx rollup -c"
   },
   "author": "lm902",
   "license": "Apache-2.0",
