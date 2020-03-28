@@ -1,6 +1,6 @@
 {
   "name": "stk-mobile",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Client library for user profile for SSD mobile project",
   "main": "bundle.js",
   "scripts": {
@@ -11,10 +11,12 @@
   "author": "lm902",
   "license": "Apache-2.0",
   "dependencies": {
-    "leancloud-storage": "^4.3.0",
+    "leancloud-storage": "^4.3.0"
+  },
+  "devDependencies": {
     "@rollup/plugin-typescript": "^4.0.0",
-    "rollup": "^2.2.0",
     "codelyzer": "^5.2.1",
+    "rollup": "^2.2.0",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
   }
